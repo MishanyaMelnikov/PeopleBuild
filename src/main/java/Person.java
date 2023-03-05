@@ -81,6 +81,15 @@ public class Person {
 
     }
 
+    @Override
+    public int hashCode() {
+        int prime = 31;
+        int result = 17;
+        result = prime * result + (name != null ? name.hashCode() : 0);
+        result = prime * result + (surname != null ? surname.hashCode() : 0);
+        return result;
+    }
+
 
 
 }
