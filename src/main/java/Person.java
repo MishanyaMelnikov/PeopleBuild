@@ -66,12 +66,11 @@ public class Person {
 
     }
 
-//    public PersonBuilder newChildBuilder(String name, String surname, String address) {
-//
-//
-//
-//
-//    }
+    public PersonBuilder newChildBuilder() {
+        return newChildBuilder().setName(this.name).setSurname(getSurname()).setAddress(getAddress());
+
+
+    }
 
     @Override
     public String toString() {
